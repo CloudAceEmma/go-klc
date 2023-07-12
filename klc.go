@@ -27,6 +27,7 @@ package klc
 
 import (
 	"fmt"
+	"time"
 )
 
 var lunarYear int = 0
@@ -510,4 +511,9 @@ func GetSolarMonth() int {
 
 func GetSolarDay() int {
 	return solarDay
+}
+
+func TimeToKorean(t time.Time) string {
+	SetSolarDate(t.Year(), int(t.Month()), t.Day())
+	return GetGapjaString()
 }
