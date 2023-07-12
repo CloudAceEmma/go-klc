@@ -1,3 +1,3 @@
-module github.com/chunghha/go-klc
+module github.com/CloudAceEmma/go-klc
 
 go 1.20
